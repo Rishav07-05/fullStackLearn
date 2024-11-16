@@ -49,10 +49,3 @@ Check out the [live demo](#) to see the app in action.
 - **Appwrite** (configured and hosted locally or on a server)
 - **Prisma** installed globally: `npm install -g prisma`
 
-### Installation
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
