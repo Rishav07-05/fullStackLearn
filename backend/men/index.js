@@ -53,6 +53,7 @@ app.use((req, res, next) => {
 
 
 
+
 //GET method
 
 app.get('/', (req, res, next) => {
@@ -71,7 +72,7 @@ app.get('/about', (req, res) => {
 
 app.get('/get-form-data', (req , res) => {
     console.log(req.query);
-    res.send('data receive')
+    res.send('data received')
 })
 
 app.listen(3000);
