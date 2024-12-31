@@ -68,4 +68,10 @@ app.get('/about', (req, res) => {
     res.send('About Page')
 })
 
+
+app.get('/get-form-data', (req , res) => {
+    console.log(req.query);
+    res.send('data receive')
+})
+
 app.listen(3000);
