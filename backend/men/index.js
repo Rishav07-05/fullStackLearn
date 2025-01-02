@@ -52,9 +52,17 @@ app.use((req, res, next) => {
 
 
 
+// Built-in Middleware need to be used for post method to get data in console 
+
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
+// Built-in middlewares to link css 
+app.use(express.static("public"))
 
 
-//GET method
+
+//GET method => frontend to server
 
 app.get('/', (req, res, next) => {
     const a = 5, b = 5;
@@ -70,8 +78,10 @@ app.get('/about', (req, res) => {
 })
 
 
-app.get('/get-form-data', (req , res) => {
-    console.log(req.query);
+// POST method => server to frontend
+
+app.post('/get-form-data', (req , res) => {
+    console.log(req.body);
     res.send('data received')
 })
 
