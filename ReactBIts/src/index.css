@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Bruce Forever;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("./assets/Font/BruceForever.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Longa Iberica;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("./assets/Font/LongaIberica-DEMO.ttf") format("truetype");
+}
+
+
+@theme{
+    --font-bruce: "Bruce Forever", "sans-serif";
+    --font-longa: "Longa Iberica", "sans-serif";
+    
+}
+
+
+@theme{
+  --animate-marquee: marquee 15s linear infinite;
+  @keyframes marquee {
+    0%{
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
