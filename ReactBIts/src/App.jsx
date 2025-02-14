@@ -9,7 +9,7 @@ import ThirdPage from "./components/ThirdPage";
 
 const App = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-black overflow-hidden">
       <FirstPage />
       <SecondPage />
       <ThirdPage />
